@@ -13,4 +13,4 @@ e x = foldr (\i r -> x ^ i / factorial i + r) 0 [0..100]
 sin' :: (Floating a) => a -> a
 sin' x =  foldr (\i r-> ((-1) ^ i / factorial (2*i+1)) * x^(2*i + 1) + r) 0 [0..100]
 cos' :: (Floating a) => a -> a
-cos' x = foldr (\i r -> ((-1) ^ i / factorial (2*i)) * x^(2*i)) 0 [0..100]
+cos' x = foldr (\i r -> ((-1) ^ i / factorial (2*i)) * x^(2*i) + r) 0 [0..100]
